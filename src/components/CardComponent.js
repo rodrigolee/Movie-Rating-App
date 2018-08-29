@@ -4,12 +4,13 @@ import TextArea from'./TextArea'
 this.state = {
     message: ''
 }
-
+// go through array genre and list all
 const displayGenre = (genres) => {
     return genres.map((genre, i) => {
         return <p key={i}>{genre}</p>
     })
 }
+// computation for average star rating
 const avgStarRating = (rating => {
     console.log(rating)
     if(rating){
@@ -23,7 +24,7 @@ const avgStarRating = (rating => {
         return <p>0</p>
     }
 })
-
+// all comments
 const displayComments = (comments) => {
     if(comments) {
         return comments.map((comment, i) => {
@@ -31,7 +32,7 @@ const displayComments = (comments) => {
         })
     }
 }
-
+// last star rating
 const yourStarRating = (rating) => {
     let ratingArr = rating.lastRating
     if(ratingArr.length > 0) {

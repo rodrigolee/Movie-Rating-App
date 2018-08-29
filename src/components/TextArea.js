@@ -8,6 +8,7 @@ class TextArea extends Component {
             comment: '',
         }
     }
+    //set text value to comment 
     onChange = (e) => this.setState({ comment: e.target.value })
     //Post Comment
     postComment = () => {
