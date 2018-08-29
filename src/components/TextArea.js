@@ -26,7 +26,7 @@ class TextArea extends Component {
         return(
             <div>
                 <form>
-                    Comment:<textarea onChange={this.onChange} value={this.state.comment}></textarea>
+                    Comment:<textarea onChange={this.onChange} value={this.state.comment} maxlength="500"></textarea>
                 </form>
                 <button onClick={this.postComment}>Post Comment</button>
             </div>
